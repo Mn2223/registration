@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OTP Verification</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+
+    #otp-input {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    #verify-btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h2>OTP Verification</h2>
+  
+  <p>An OTP has been sent to your linked email address.</p>
+
+  <label for="otp-input">Enter OTP:</label>
+  <input type="text" id="otp-input" maxlength="4">
+
+  <br><br>
+
+  <button id="verify-btn" onclick="verifyOTP()">Verify</button>
+
+  <script>
+    function verifyOTP() {
+      
+      alert('Verify button clicked! Implement server-side logic to check OTP.');
+    
+
+      window.location.href = "new.html";
+    }
+    
+  </script>
+</body>
+</html>
